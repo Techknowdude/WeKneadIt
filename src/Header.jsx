@@ -7,13 +7,11 @@ export default function Header() {
   return (
     <nav>
       <Link to={"/"}>
-        <h1 className="logo">WeKeadIt</h1>
+        <h1>WeKeadIt</h1>
       </Link>
-      <div className="nav-cart">
+      <div>
         🛒
-        <span data-testid="cart-number" className="nav-cart-number">
-          {/* {cart.length} */}
-        </span>
+        <span>{/* {cart.length} */}</span>
       </div>
     </nav>
   );

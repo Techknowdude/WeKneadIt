@@ -7,7 +7,7 @@ export const Route = createLazyFileRoute("/")({
 function RouteComponent() {
   return (
     <div>
-      <p>Hello there!</p>
+      <p className="text-3xl font-bold underline">Hello there!</p>
       <p>General Kenobi.</p>
     </div>
   );
