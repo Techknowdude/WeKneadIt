@@ -1,8 +1,8 @@
 import { useContext } from "react";
 import { Link } from "@tanstack/react-router";
 // import { CartContext } from "./contexts";
-import Background from "./images/WeKneadIt Customer Header.png";
-import Logo from "./images/WeKneadIt logo - white.png";
+import Background from "./images/WeKneadIt-Customer-Header.png";
+import Logo from "./images/WeKneadIt-logo-white.png";
 
 export default function Header() {
   //   const [cart] = useContext(CartContext);
