@@ -1,5 +1,6 @@
 import React, { useCallback, useEffect, useState } from "react";
 import { Search, Mic } from "lucide-react";
+import getCurrentLocation from "./api/getCurrentLocation";
 
 const sampleData = [
   {
@@ -32,6 +33,7 @@ const sampleData = [
 const SearchBar = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [searchResults, setSearchResults] = useState([]);
+  const [location, setLocation] = useState({});
 
   const debounce = (func, delay) => {
     let timeoutID;
@@ -60,6 +62,19 @@ const SearchBar = () => {
     handleSearch(searchTerm);
   }, [searchTerm, handleSearch]);
 
+  useEffect(() => {
+    const fetchLocationData = async () => {
+      try {
+        const data = await getCurrentLocation();
+        setLocation(data);
+      } catch (error) {
+        console.error("Failed to fetch location context:", error);
+      }
+    };
+
+    fetchLocationData();
+  }, []);
+
   const handleInputChange = (e) => {
     setSearchTerm(e.target.value);
   };
@@ -74,7 +89,11 @@ const SearchBar = () => {
               value={searchTerm}
               onChange={handleInputChange}
               className="w-full rounded-full border border-gray-200 px-5 py-3 pr-20 text-base shadow-md transition-shadow duration-200 hover:shadow-lg focus:border-gray-300 focus:outline-none"
-              placeholder="Near [your place]"
+              placeholder={
+                location.city
+                  ? `Near ${location.city}, ${location.region}...`
+                  : "Search places..."
+              }
             />
             <div className="absolute right-0 top-0 mr-4 mt-3 flex items-center">
               <button
