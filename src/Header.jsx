@@ -15,9 +15,9 @@ export default function Header() {
       />
       <Link
         to={"/"}
-        className="absolute inset-0 flex items-start justify-center"
+        className="absolute inset-0 flex justify-self-center z-10 w-1/4 h-20"
       >
-        <img src={Logo} className="w-1/4 max-h-20 object-contain" />
+        <img src={Logo} className="object-contain" />
       </Link>
       <div className="absolute inset-0 flex justify-end mr-auto text-xl text-black">
         🛒

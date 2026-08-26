@@ -1,5 +1,6 @@
 import { createLazyFileRoute } from "@tanstack/react-router";
 import { TriangleAlert } from "lucide-react";
+import Catagory from "../Catagory";
 
 export const Route = createLazyFileRoute("/")({
   component: RouteComponent,
