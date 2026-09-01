@@ -7,16 +7,14 @@ import Header from "../Header";
 export const Route = createRootRoute({
   component: () => {
     return (
-      <>
+      <div className="bg-themed-color">
         {/* <CartContext.Provider value={cartHook}> Keep this for future cart options*/}
-        <div>
-          <Header />
-          <Outlet />
-        </div>
+        <Header />
+        <Outlet />
         {/* </CartContext.Provider> */}
         <TanStackRouterDevtools />
         <ReactQueryDevtools />
-      </>
+      </div>
     );
   },
 });

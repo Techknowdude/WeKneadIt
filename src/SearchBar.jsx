@@ -92,7 +92,7 @@ const SearchBar = () => {
               placeholder={
                 location.city
                   ? `Near ${location.city}, ${location.region}...`
-                  : "Search places..."
+                  : "Search near you..."
               }
             />
             <div className="absolute right-0 top-0 mr-4 mt-3 flex items-center">
