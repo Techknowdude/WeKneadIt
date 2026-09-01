@@ -1,7 +1,7 @@
 export default function Catagory(props) {
   return (
-    <div>
-      <img src={props.image} />
+    <div className="inline-block">
+      <img src={props.image} alt={props.name} />
     </div>
   );
 }
