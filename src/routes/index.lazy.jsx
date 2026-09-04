@@ -41,7 +41,7 @@ function RouteComponent() {
             <Catagory
               key={category.name}
               name={category.name}
-              image={new URL(category.image, import.meta.url).href}
+              image={category.image}
             />
           ))}
         </section>

@@ -4,25 +4,28 @@
     "location": "Jackson, CA",
     "rating": "5",
     "bakeryID": 1,
-    "image": "./images/bakery-default-placeholder.png",
+    "image": "/images/placeholders/bakery-default-placeholder.png",
     "isLiked": "true"
   },
   {
-    "name": "Above Avg Cookies",
+    "name": "Crispy Cookies",
     "location": "Sacremento, CA",
     "rating": "4.7",
+    "image": "/images/placeholders/bakery-default-placeholder.png",
     "bakeryID": 2
   },
   {
     "name": "All Caked Up",
     "location": "Ione, CA",
     "rating": "3.4",
+    "image": "/images/placeholders/bakery-default-placeholder.png",
     "bakeryID": 3
   },
   {
     "name": "Ferment-nation",
     "location": "Martell, CA",
     "rating": "1.8",
+    "image": "/images/placeholders/bakery-default-placeholder.png",
     "bakeryID": 4
   }
 ]

@@ -1,18 +1,18 @@
 [
   {
     "name": "Cakes",
-    "image": "../images/CakesCategory.jpg"
+    "image": "/images/categories/CakesCategory.jpg"
   },
   {
     "name": "Cupcakes",
-    "image": "../images/CupcakesCategory.jpg"
+    "image": "/images/categories/CupcakesCategory.jpg"
   },
   {
     "name": "Pastries",
-    "image": "../images/PastriesGategory.jpg"
+    "image": "/images/categories/PastriesCategory.jpg"
   },
   {
     "name": "Sourdough",
-    "image": "../images/SourdoughCategory.jpg"
+    "image": "/images/categories/SourdoughCategory.jpg"
   }
 ]
