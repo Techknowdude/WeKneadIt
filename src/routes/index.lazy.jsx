@@ -35,7 +35,7 @@ function RouteComponent() {
     <>
       <Header />
       <div className="space-y-2 px-5 py-2">
-        <h2 className="text-xl font-semibold">Catagories</h2>
+        <h2 className="text-xl font-semibold ml-4">Catagories</h2>
         <section className="flex flex-wrap gap-2">
           {categories.map((category) => (
             <Catagory
@@ -48,9 +48,9 @@ function RouteComponent() {
 
         {!isLoadingBakeries && (
           <>
-            <h2 className="text-xl font-semibold">Fresh Nearby</h2>
+            <h2 className="text-xl font-semibold ml-4">Fresh Nearby</h2>
 
-            <section className="flex gap-4">
+            <section className="flex gap-4 overflow-hidden overflow-x-auto">
               {bakeries.map((bakery) => (
                 <BakeryCard
                   image={bakery.image}

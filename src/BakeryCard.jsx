@@ -10,14 +10,14 @@ export default function BakeryCard({ image, bakeryName, isLiked }) {
         <img
           src={new URL(image || defaultPlaceholder, import.meta.url).href}
           alt={bakeryName || "Available Bakery Item"}
-          className="rounded-lg min-w-48 block w-full h-auto"
+          className="rounded-lg min-w-32 sm:min-w-48 block w-full h-auto"
         />
         <Heart
           className={`absolute top-2 right-2 ${isLiked ? "fill-red-300" : "fill-white"}`}
         />
       </div>
       <div className="p-3 flex-grow flex flex-col justify-between">
-        <p className="text-balance font-semibold">
+        <p className="text-balance font-semibold text-sm sm:text-base">
           {bakeryName || "BakeryName"}
         </p>
         <div className="flex">
