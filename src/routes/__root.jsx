@@ -11,8 +11,8 @@ export const Route = createRootRoute({
         {/* <CartContext.Provider value={cartHook}> Keep this for future cart options*/}
         <Outlet />
         {/* </CartContext.Provider> */}
-        <TanStackRouterDevtools />
-        <ReactQueryDevtools />
+        {process.env.NODE_ENV === 'development' && (<TanStackRouterDevtools />)}
+        {process.env.NODE_ENV === 'development' && (<ReactQueryDevtools />)}
       </div>
     );
   },
