@@ -9,7 +9,6 @@ export const Route = createRootRoute({
     return (
       <div className="bg-themed-color">
         {/* <CartContext.Provider value={cartHook}> Keep this for future cart options*/}
-        <Header />
         <Outlet />
         {/* </CartContext.Provider> */}
         <TanStackRouterDevtools />

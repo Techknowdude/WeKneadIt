@@ -8,21 +8,26 @@ import SearchBar from "./SearchBar";
 export default function Header() {
   //   const [cart] = useContext(CartContext);
   return (
-    <nav className="relative w-full h-100 items-start">
+    <nav className="relative w-full min-w-72 inline-block">
       <img
         src={Background}
-        className="w-full h-auto object-cover max-h-72 object-top -z-10"
+        className="block w-full h-fill min-h-60 object-cover max-h-64 object-top -z-10"
       />
-      <Link
-        to={"/"}
-        className="absolute inset-0 flex justify-self-center z-10 w-1/4 h-20"
-      >
-        <img src={Logo} className="object-contain" />
-      </Link>
-      <div className="absolute inset-0 flex justify-end mr-auto text-xl text-black">
+      <div className="absolute inset-0 w-full block">
+        <Link
+          to={"/"}
+          className="flex justify-self-center z-10 w-40 sm:w-1/4 h-20"
+        >
+          <img src={Logo} className="object-contain w-full" />
+        </Link>
+        {/* <div className="absolute inset-0 flex justify-end mr-auto text-xl text-black">
         🛒
+      </div> */}
+        <h1 className="flex justify-self-center text-white text-3xl font-semibold">
+          What are you craving?
+        </h1>
+        <SearchBar />
       </div>
-      <SearchBar />
     </nav>
   );
 }

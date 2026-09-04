@@ -1,18 +1,28 @@
 [
   {
     "name": "From This Little Homestead",
-    "location": "Jackson, CA"
+    "location": "Jackson, CA",
+    "rating": "5",
+    "bakeryID": 1,
+    "image": "./images/bakery-default-placeholder.png",
+    "isLiked": "true"
   },
   {
     "name": "Above Avg Cookies",
-    "location": "Sacremento, CA"
+    "location": "Sacremento, CA",
+    "rating": "4.7",
+    "bakeryID": 2
   },
   {
     "name": "All Caked Up",
-    "location": "Ione, CA"
+    "location": "Ione, CA",
+    "rating": "3.4",
+    "bakeryID": 3
   },
   {
     "name": "Ferment-nation",
-    "location": "Martell, CA"
+    "location": "Martell, CA",
+    "rating": "1.8",
+    "bakeryID": 4
   }
 ]

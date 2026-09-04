@@ -80,9 +80,12 @@ const SearchBar = () => {
   };
 
   return (
-    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-xl px-4 z-20">
-      <div className="flex flex-col items-center p-4">
-        <form onSubmit={(e) => e.preventDefault()} className="mb-2 w-full">
+    <div className="flex items-center top-0 left-0 right-0 bottom-0 justify-self-center align-middle w-3/4 px-4 z-20">
+      <div className="flex flex-col items-center p-4 w-full max-h-12 sm:max-h-20">
+        <form
+          onSubmit={(e) => e.preventDefault()}
+          className="mb-2 min-w-48 max-w-1/2 w-full"
+        >
           <div className="relative">
             <input
               type="text"
