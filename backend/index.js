@@ -105,6 +105,18 @@ server.get("/api/bakery_items", async function getFeaturedItems(req, res) {
 
   res.send(items);
 });
+server.get("/api/categories", async function getFeaturedItems(req, res) {
+  const promise = db.all("SELECT * FROM catagories");
+  const [items] = await Promise.all([promise]);
+
+
+  console.log("Got all these responses:");
+  items.forEach((element) => {
+    console.log(element);
+  });
+
+  res.send(items);
+});
 
 // post example
 
