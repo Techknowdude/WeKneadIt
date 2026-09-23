@@ -18,7 +18,7 @@ export default defineWorkspace([
       browser: {
         provider: "playwright",
         enabled: true,
-        name: "firefox",
+        name: "chrome",
       },
     },
   },
