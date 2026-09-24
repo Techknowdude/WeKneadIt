@@ -28,26 +28,22 @@ function RouteComponent() {
 
   return (
     <>
-      <p className="text-xl font-semibold inline">
-        <TriangleAlert className="inline pr-1" />
-        Hello there! This website is currently under construction. Please check
-        back soon.
-      </p>
       <Header />
       <div className="space-y-2 px-5 py-2">
         {!isLoadingCategories && (
           <>
-        <h2 className="text-xl font-semibold ml-4">Categories</h2>
-        <section className="flex gap-2 overflow-hidden overflow-x-auto">
-          {catagories.map((category) => (
-            <Category
-              key={category.name}
-              name={category.name}
-              image={category.image}
-            />
-          ))}
-        </section>
-        </>)}
+            <h2 className="text-xl font-semibold ml-4">Categories</h2>
+            <section className="flex gap-2 overflow-hidden overflow-x-auto">
+              {catagories.map((category) => (
+                <Category
+                  key={category.name}
+                  name={category.name}
+                  image={category.image}
+                />
+              ))}
+            </section>
+          </>
+        )}
         {!isLoadingBakeries && (
           <>
             <h2 className="text-xl font-semibold ml-4">Fresh Nearby</h2>

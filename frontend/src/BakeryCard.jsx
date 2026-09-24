@@ -12,7 +12,7 @@ export default function BakeryCard({
   itemName,
 }) {
   return (
-    <div className="inline-block w-full rounded-lg bg-neutral-50">
+    <div className="inline-block w-full rounded-lg bg-neutral-50 max-w-96">
       <div className="relative w-full">
         <img
           src={new URL("/images/bakery_items/" + image, import.meta.url).href}
